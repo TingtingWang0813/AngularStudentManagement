@@ -40,9 +40,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://wangmerds.c9l9o1r4wq54.us-west-1.rds.amazonaws.com/jiuzhangquanzhanke?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+        url: jdbc:mysql://${MYSQL_URL}/jiuzhangquanzhanke?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
         username: wangme123
-        password: ilyily123
+        password: ${MYSQL_PW}
         hikari:
             data-source-properties:
                 cachePrepStmts: true
